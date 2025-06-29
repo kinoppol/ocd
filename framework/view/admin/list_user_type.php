@@ -49,6 +49,7 @@
                       <tr>
                         <th>ชื่อประเภท</th>
                         <th>สิทธิ์</th>
+                        <th>โมดูลที่ใช้งานได้</th>
                         <th>จัดการ</th>
                       </tr>
                     </thead>
@@ -65,6 +66,11 @@
                         <td><i class="fab fa-angular fa-lg text-danger me-3"></i>
                           <strong><?php
                           print implode($user_type_data['active_menu'],', ');
+                           ?></strong>
+                        </td>
+                        <td><i class="fab fa-angular fa-lg text-danger me-3"></i>
+                          <strong><?php
+                          print implode($user_type_data['active_module'],', ');
                            ?></strong>
                         </td>
                         <td>

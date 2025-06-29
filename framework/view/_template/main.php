@@ -1,8 +1,6 @@
 <?php
 helper('sneat/menu');
-$systemModel=model('system');
 $menuModel=model('menu');
-$system=$systemModel->get_config();
 $active_module=$menuModel->get_user_module(['id'=>$_SESSION['user']['user_type_id']]);
 $active_menu=$menuModel->get_user_menu(['id'=>$_SESSION['user']['user_type_id']]);
 $menu='';

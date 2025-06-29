@@ -1,16 +1,16 @@
 <?php
 
-$menu['ระบบ RMS']=array(
+$menu['เชื่อมโยข้อมูลระบบ RMS']=array(
     'import'=>array(
         'label'=>'นำเข้าข้อมูลจากระบบ RMS',
-        'bullet'=>'tf-icons bx bx-home',
-        'url'=>module_url('hello','index'),
+        'bullet'=>'tf-icons bx bx-download',
+        'url'=>module_url('rms','import'),
     ),
     'Export'=>array(
         'label'=>'ส่งข้อมูลกลับระบบ RMS',
-        'bullet'=>'tf-icons bx bx-list-plus',
-        'url'=>module_url('hello','subMenu'),
-        'item'=>array(
+        'bullet'=>'tf-icons bx bx-upload',
+        'url'=>module_url('rms','export'),
+        /*'item'=>array(
                 'menu1'=>array(
                 'label'=>'เมนูย่อย 1',
                 'url'=>module_url('hello','menu1'),
@@ -19,7 +19,7 @@ $menu['ระบบ RMS']=array(
                 'label'=>'เมนูย่อย 2',
                 'url'=>module_url('hello','menu2'),
             ),
-        ),
+        ),*/
     ),
 );
 print gen_menu($menu);
