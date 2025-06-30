@@ -1,12 +1,13 @@
 <?php
 function api_load_user(){
     global $system;
+    global $rms_api_key;
 $rms=$system['rms_url'];
 if(empty(trim($rms))){
     print "No RMS URL.";
     exit();
 }
-$people_data=rms_get_data($rms,'nutty','people');
+$people_data=rms_get_data($rms,$rms_api_key,'people');
 print_r($people_data);
 }
 
